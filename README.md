@@ -36,7 +36,7 @@ Responsive
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-[Lofi Cafe Website](lofi.cafe)
+[Lofi Cafe Website](https://lofi.cafe)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
