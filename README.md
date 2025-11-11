@@ -36,15 +36,15 @@ Responsive
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-[Lofi Cafe Website](https://lofi.cafe)
+[Harry Potter Website](https://www.harrypotter.com/)
 
-  #### Screenshot(s) van de eerste pagina (small screen): 
+  #### Screenshot(s) van de eerste pagina: 
   Start scherm
-  <img src="readme-images/Screenshot 2024-09-02 at 20.11.45.png" width="375px" alt="Je hoort muziek, ziet een animatie en hebt verschillende opties en plekken om naartoe te gaan">
+  <img src="readme-images/ScreenshotPagina1WEB.png" width="375px" alt="Je hoort muziek, ziet een animatie en hebt verschillende opties en plekken om naartoe te gaan">
 
-  #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/Screenshot 2024-09-02 at 20.13.52.png" width="375px" alt="Alle opties zijn weg en je hebt een vergrootte animatie, de muziek speelt nogsteeds af">
+  #### Screenshot(s) van de tweede pagina:
+  Profiel Scherm
+  <img src="readme-images/ScreenshotPagina2WEB.png" width="375px" alt="Alle opties zijn weg en je hebt een vergrootte animatie, de muziek speelt nogsteeds af">
  
 </details>
 
