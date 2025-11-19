@@ -40,11 +40,13 @@ Responsive
 
   #### Screenshot(s) van de eerste pagina: 
   Start scherm
-  <img src="readme-images/ScreenshotPagina1WEB.png" width="375px" alt="Je hoort muziek, ziet een animatie en hebt verschillende opties en plekken om naartoe te gaan">
+
+  <img src="readme-images/ScreenshotPagina1WEB.png" width="375px" alt="ScreenshotStartagina">
 
   #### Screenshot(s) van de tweede pagina:
   Profiel Scherm
-  <img src="readme-images/ScreenshotPagina2WEB.png" width="375px" alt="Alle opties zijn weg en je hebt een vergrootte animatie, de muziek speelt nogsteeds af">
+
+  <img src="readme-images/ScreenshotPagina2WEB.png" width="375px" alt="ScreenShotProfielPagina">
  
 </details>
 
@@ -57,6 +59,12 @@ Responsive
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  -  Alle bovenste opties worden duidelijk beschreven, ook gaat ie naar het logo van de website en heeft deze een duidelijke naam, waardoor je weet op welke website je bent. Er is ook bij de zoekbalk "trending searches" waarna deze worden benoemd. Dit zorgt er voor dat je sneller bij een populaire term kan komen.
+  -  Bij de 2e heading leest ie niet de tekst voor, maar benoemd hij alle letters los van elkaar. Deze extra toevoegingen, worden ook bij de Quizzes opgelezen. Hoewel de kopjes daarvoor wel normaal worden opgelezen. Ook staat er bij de verschillende quizzes waarschijnlijk dubbele code, waardoor hij de titel 2 keer voorleest. Ook zegt hij voor elke header "Heading level 2".
+  -  Wanneer je Headers navigeert variert het per onderwerp of hij alleen de titel benoemt of ook de verschillende onderste sections benoemd. Zo gaat hij bij de quizzes en shop wel langs de items en bij de rest niet.
+  -  Bij de helft van de links in de header worden de link namen dubbel gezegd, dit is niet het geval bij de rest van de links. Ook is er bij de derde Carousel extra text die word opgenoemd, dit is waarschijnlijk een file sort. Dit probleem was er niet bij de vorige carousels.
+  -  Er is met kleur heel goed nagedacht over het contrast. Zo is alles heel goed uit elkaar te halen ook met de verschillende soorten kleurenblindheid zou je de website nog zonder probleem kunnen gebruiken. Het contrast tussen de tekst is ook duidelijk, het enige twijfelgeval is bij de "toe curling embarrassing quiz" aangezien de tekst op een afbeelding met licht is gezet.
+  -  Er zijn geen verschillende versies voor light en dark mode, de website zelf zou ik wel beschrijven als een dark-mode website.
 
 </details>
 
@@ -68,13 +76,11 @@ Responsive
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/BreakdownSchets_Home_HarryPotter.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/BreakdownSchets_Blok1.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -229,8 +235,8 @@ Responsive
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. https://www.clipartmax.com/max/m2H7G6H7Z5H7K9Z5/ , PNG Harry Potter logo
+  2. https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
   3. ...
 
 </details>
