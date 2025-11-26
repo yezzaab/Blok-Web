@@ -1,6 +1,6 @@
 /**************/
 /* CSS REMEDY */
-/**************/
+/*************/
 *, *::after, *::before {
   box-sizing:border-box;  
 }
@@ -11,21 +11,80 @@
 
 
 /*********************/
-/* CUSTOM PROPERTIES */
+/* Variabelen */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	
+	--color-text:#ffffff;
+	--color-background:#242633;
+	--color-details:#070f28;
+	--color-button:#5758ff;
+	
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 8000px;
 }
 
 
 
-
-
 /****************/
-/* JOUW STYLING */
+/* JOUW STYLING */   /*https://www.w3schools.com/css/css3_transitions.asp transition code*/
 /****************/
+   nav#navheader {
+	background-color: var(--color-details);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: top 0.3s ease;
+	z-index: 1000;
+  }
+  
+   nav#navheader ul#websitenav {
+	display: flex;
+	margin: 0;
+	margin-top: 2em;
+	padding: 0;
+	list-style: none;
+  }
+  
+  nav#navheader li {
+	margin: 0;
+  }
+  
+  nav#navheader a{
+	display: block;
+	padding: 1em;
+	color: var(--color-text);
+	text-decoration: none;
+  }
+  
+   nav#navheader a:hover {
+	background-color: var(--color-text);
+	color: var(--color-details);
+  }
 
-/* jouw code */
 
+  #topheader {
+	display: grid; 
+	grid-template-columns: repeat(4, auto); 
+	justify-content: flex-start;
+	margin-right: -5px;
+  }
+  /*https://www.w3schools.com/css/css_list.asp code om de puntjes weg te halen*/
+  #topheader li {
+	list-style: none; 
+  }
+  
+  #topheader a {
+	display: inline-block;
+  }
+  
+  #topheader img {
+	height: 1.5em; 
+	width: auto;
+	transition: transform 0.3s ease, filter 0.3s ease; 
+  }
+  
