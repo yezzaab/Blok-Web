@@ -20,14 +20,15 @@
 	--color-details:#070f28;
 	--color-button:#5758ff;
 	
+	
 }
 
 body{
+	background-color: var(--color-background);
 	margin: 0;
 	padding: 0;
 	height: 8000px;
 }
-
 
 
 /****************/
@@ -37,6 +38,7 @@ body{
 	background-color: var(--color-details);
 	position: fixed;
 	top: 0;
+	height: 4.9em;
 	width: 100%;
 	transition: top 0.3s ease;
 	z-index: 1000;
@@ -55,7 +57,7 @@ body{
   }
   
   nav#navheader a{
-	display: block;
+	display: none;
 	padding: 1em;
 	color: var(--color-text);
 	text-decoration: none;
@@ -65,6 +67,8 @@ body{
 	background-color: var(--color-text);
 	color: var(--color-details);
   }
+
+  
 
 
   #topheader {
@@ -83,8 +87,46 @@ body{
   }
   
   #topheader img {
-	height: 1.5em; 
+	height: 0em; 
 	width: auto;
 	transition: transform 0.3s ease, filter 0.3s ease; 
   }
   
+
+  /****************/
+/* Desktop */   
+/****************/
+
+  @media (min-width: 48em) {
+	body {
+	  background-color: white;
+	}
+  
+	p {
+	  column-count: 2;
+	  column-gap: 2em;
+	}
+
+	nav#navheader a{
+		display: block;
+		padding: 1em;
+		color: var(--color-text);
+		text-decoration: none;
+	  }
+
+	  nav#navheader {
+		background-color: var(--color-details);
+		position: fixed;
+		top: 0;
+		height: 10em;
+		width: 100%;
+		transition: top 0.3s ease;
+		z-index: 1000;
+	  }
+
+	#topheader img {
+		height: 1.5em; 
+		width: auto;
+		transition: transform 0.3s ease, filter 0.3s ease; 
+	  }
+  }
