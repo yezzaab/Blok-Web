@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harry Potter</title>
   <link href="styles/style.css" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="images/harry-potter-seeklogo.svg">
   <script defer src="scripts/script.js"></script>
 </head>
 
@@ -17,14 +17,19 @@
 
   <nav id="navheader">
     <img src="images/HarryPotter-Logo.png" alt="Logo" id="logo">
-    <img src="images/WhiteHamburgerMenu.png" alt="hamburgermenu" id="hamburgermenu">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <ul id="topheader">
       <li><a href="#"><img src="images/youtube-app-white-icon.webp" alt="YoutubeLink"></a></li>
       <li><a href="#"><img src="images/TikTok-icon-white.png" alt="TiktokLink"></a></li>
       <li><a href="#"><img src="images/facebook-app-round-white-icon.webp" alt="FacebookLink"></a></li>
       <li><a href="#"><img src="images/instagram-white-icon.webp" alt="InstagramLink"></a></li>
+      <button>log in</button>
+      <button id="signup">sign up</button>
     </ul>
+    
     <ul id="websitenav">
+      <img src="images/nav-promo-810974b5613e101e6a4d226a2260fc94.png" alt="Discover Your Hogwarts House Promo">
       <li><a href="#">News & Features</a></li>
       <li><a href="#">Quizzes & puzzles</a></li>
       <li><a href="#">Discover</a></li>
@@ -34,7 +39,13 @@
       <li><a href="#">Fact Files</a></li>
       <li><a href="#">Shop</a></li>
     </ul>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
   </nav>
+
+  <script src="scripts/script.js"></script>
   
   
  
@@ -52,7 +63,7 @@
   </section>
 
   <section id="poll">
-    <h2>Poll</h2>
+    <h2>- Poll -</h2>
     <p>Who would you rather take to the Yule Ball?</p>
     <button>Cedric Diggory</button>
     <button>Cho Chang</button>
@@ -60,34 +71,107 @@
     <button>Hermione Granger</button>
   </section>
 
-  <section>
+  <section id="sorting">
     <h2>What's your Hogwarts house?</h2>
+    <img src="images/sortedheader.svg" alt="Sorted today" id="sortedHeader">
+    <ul>
+      <li><h4>Gryffindor</h4></li>
+      <li><h4>Ravenclaw</h4></li>
+      <li><h4>Hufflepuff</h4></li>
+      <li><h4>Slytherin</h4></li>
+    </ul>
     <button>get sorted now</button>
   </section>
 
   <section id="quizzes">
     <h2>Quizzes</h2>
     <ul>
-      <li><h3>The ultimate Dobby quiz</h3><p>15 Questions</p> <img src="images/Dobby_3_1800x1248.webp" alt="picturedobby"></li>
-      <li><h3>The toe-curlingly embarrassing quiz</h3><p>10 Questions</p><img src="images/hp-f3-boggart-snape-augusta-square.webp" alt="picture snape"></li>
-      <li><h3>Whose wand is it anyway?</h3><p>10 Questions</p><img src="images/the-wand-lighting-charm_1_1800x1248.webp" alt="pictureharrypotter"></li>
+      <li>
+        <h3>The ultimate Dobby quiz</h3>
+        <img src="images/Dobby_3_1800x1248.webp" alt="picturedobby">
+        <p>15 Questions</p>
+      </li>
+
+      <li>
+        <h3>The toe-curlingly embarrassing quiz</h3>
+        <img src="images/hp-f3-boggart-snape-augusta-square.webp" alt="picture snape">
+        <p>10 Questions</p>
+      </li>
+
+      <li>
+        <h3>Whose wand is it anyway?</h3>
+        <img src="images/the-wand-lighting-charm_1_1800x1248.webp" alt="pictureharrypotter">
+        <p>10 Questions</p>
+        </li>
+
     </ul>
+
     <a href="#">all quizes</a>
+
   </section>
 
   <section id="ornamentshop">
     <h2>Accio ornaments! Add a touch of Harry Potter magic to Christmas</h2>
     <p>Get ready to deck the (Great) halls with these Harry Potter-themed decorations, from ornaments to adorn your mantle to bespoke baubles for your tree.</p>
+
+    
+    <ul>
+      <li>
+        <h3>Ford Anglia Glass Ornament</h3>
+        <img src="images/2000009674_Christmas2025FordAngliaOrnament_A_550x825.png" alt="">
+        <p>$15,00</p>
+        <button>Add to cart</button>
+      </li>
+      <li>
+        <h3>Slytherin Glitter Ornament</h3>
+        <img src="images/2000009620_Christmas25SlytherinGlitterOrnament_550x825.png" alt="">
+        <p>$12,00</p>
+        <button>Add to cart</button>
+      </li>
+      <li>
+        <h3>Hogwarts Trio Metal SNow Globe Ornament</h3>
+        <img src="images/2000009636_Christmas25TrioSnowglobeOrnament_A_550x825.png" alt="">
+        <p>$15,00</p>
+        <button>Add to cart</button>
+      </li>
+      <li>
+        <h3>Knight Bus Glass Ornament</h3>
+        <img src="images/2000009683_Christmas25KnightBusOrnament_A_550x825.png" alt="">
+        <p>$15,00</p>
+        <button>Add to cart</button>
+      </li>
+    </ul>
+    <a href="#">VISIT THE HARRY POTTER SHOP</a>
   </section>
 
-  <section>
+  <section id="magicalpicks">
     <h2>Monthly magical picks</h2>
+    <ul>
+      <li>
+        <h3>Hungarian Horntail</h3>
+        <img src="images/03_November_-25_Fact_File_Carousel.webp" alt="">
+      </li>
+      <li>
+        <h3>The Goblet of Fire</h3>
+        <img src="images/goblet-of-fire-fact-file-carousel-with-text.webp" alt="">
+      </li>
+      <li>
+        <h3>The Yule Ball</h3>
+        <img src="images/04_November_-25_Fact_File_Carousel.webp" alt="">
+      </li>
+      <li>
+        <h3>Beauxbatons</h3>
+        <img src="images/06_August_-25_Fact_File_Carousel.webp" alt="">
+      </li>
+    </ul>
   </section>
 
 </main>
 
 <footer>
   <nav id="navfooter">
+    <div id="border">
+    <img src="images/HarryPotter-Logo.png" alt="Harry Potter" id="HarryPotterLogo">
     <ul>
       <li><a href="#">Voorkeuren beheren</a></li>
       <li><a href="#">Press</a></li>
@@ -99,6 +183,28 @@
       <li><a href="#">Legals</a></li>
       <li><a href="#">Starting Harry Potter</a></li>
     </ul>
+
+        <ul id="logos">
+      <li>
+        <a href="#">
+          <img src="images/youtube-app-white-icon.webp" alt="YoutubeLink">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+        <img src="images/TikTok-icon-white.png" alt="TiktokLink">
+      </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="images/facebook-app-round-white-icon.webp" alt="FacebookLink"></a>
+        </li>
+      <li>
+        <a href="#">
+          <img src="images/instagram-white-icon.webp" alt="InstagramLink"></a>
+        </li>
+    </ul>
+    </div>
   </nav>
 </footer>
 

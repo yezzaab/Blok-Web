@@ -29,14 +29,13 @@ body{
 	background-color: var(--color-background);
 	margin: 0;
 	padding: 0;
-	height: 8000px;
 	color: var(--color-text);
 	text-align: center;
 }
 
 
 /****************/
-/* JOUW STYLING */   /*https://www.w3schools.com/css/css3_transitions.asp transition code*/
+/* JOUW STYLING */   /*https://www.w3schools.com/css/css3_transitions.asp transition code https://css-tricks.com/snippets/css/complete-guide-grid/ Grid Guide
 /****************/
 
 
@@ -72,6 +71,16 @@ body{
   }
 
 
+
+
+
+/*********************/
+/* Header */
+/*********************/
+
+
+
+
    #logo{
 	display: flex;
 	position: absolute;
@@ -81,13 +90,12 @@ body{
 	margin-left: 80px;
    }
 
-   #hamburgermenu{
-	display: flex;
-	position: absolute;
-	height: 1.8em; 
-	width: auto;
-	margin-top: 27px;
-	margin-left: 20px;
+   nav#navheader a.icon {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+	font-size: 1.8em;
    }
 
    nav#navheader {
@@ -101,11 +109,8 @@ body{
   }
   
    nav#navheader ul#websitenav {
-	display: flex;
-	margin: 0;
-	margin-top: 2em;
-	padding: 0;
-	list-style: none;
+	display: none;
+
   }
   
   nav#navheader li {
@@ -113,26 +118,22 @@ body{
   }
   
   nav#navheader a{
-	display: none;
 	padding: 1em;
 	color: var(--color-text);
 	text-decoration: none;
-  }
-  
-   nav#navheader a:hover {
-	background-color: var(--color-text);
-	color: var(--color-details);
+	
   }
 
   
+  
 
-
-  #topheader {
-	display: grid; 
-	grid-template-columns: repeat(4, auto); 
-	justify-content: flex-start;
-	margin-right: -5px;
-  }
+ #topheader {
+  display: grid;
+  grid-auto-flow: column; 
+  gap: 0.5em;            
+  justify-self: end;       
+  align-items: center;
+ }
  
   
   #topheader a {
@@ -144,44 +145,111 @@ body{
 	width: auto;
   }
 
+  #topheader button {
+   display: flex;
+   position: relative;
+   right: 0;
+   top: 0;
+   padding: 0.7em 0.7em;
+   margin: 0.7em;
+  }
+
+#websitenav {
+  background-color: var(--color-details); 
+  width: 80vw;      
+  height: 100vh;  
+  position: fixed; 
+  top: 0;
+  left: 0;
+  padding: 5em 1em;   
+
+}
+
+#websitenav a{
+ display: grid;
+ justify-self: flex-start;
+ font-weight: 700;
+
+}
+
+#websitenav img{
+	display: flex;
+}
+  
+
+
+
+
+/*********************/
+/* Yuleball */
+/*********************/
+
+
+
+
+  #yuleball{
+	display: grid;
+	
+  }
+
+  #yuleball h2{
+	z-index: 10;
+	text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+	
+  }
+
+
+
+  #yuleball button{
+   width: fit-content;
+   justify-self: center;
+  
+  }
+
   #yulebalimgdesktop{
     display: none;
   }
 
   #yulebalimgphone{
-	display: flex;
 	height: auto; 
 	width: 100%;
-	position: absolute;
-	top: 5em;
-	left: 0;
+	margin-top: 4em;
 	z-index: 0;
-  }
- 
-
-  #yuleball h2{
-	display: flex;
-	position: relative;
-	margin-top: 12em;
-	z-index: 10;
-	text-shadow: 2px 1px 5px #000000;
-	
-  }
-
-  #yuleball p{
-	z-index: 1100;
-
-  }
-	
-	
-	
+	grid-row-start:1;
+  }	
   
+
+
+
+
+/*********************/
+/* Poll */
+/*********************/
+
+  #poll {
+	display: grid;
+	text-align: center;
+	gap: 1em;        
+	max-width: 20em;
+	margin: 0 auto;
+  }
+
+  #poll h2{
+    margin-top: 8em;
+	font-size: 1em
+  }  
+
+  #poll p{
+	margin-top: -.5em;
+	font-size: 2em;
+  }
+
 
   #poll button{
 	background-color:var(--backgroundcolor-poll);
-	border: 1px solid #5758ff;
+	border: 1px solid var(--color-button);
 	border-radius: 10px;
-	cursor: pointer;
+	
   }
   
   #poll button:hover{
@@ -189,18 +257,276 @@ body{
 
   }
 
-  #poll {
-	display: grid;
-	text-align: center;
-	gap: 10px;        
-	max-width: 300px;
-	margin: 0 auto;
-  }
+
+
+
+/*********************/
+/* Sorting */
+/*********************/
   
- #quizzes img{
-	height: auto;
-	width: 20em;
+#sorting{
+display: grid;
+place-items: center;
+text-align: center;
+
+}
+
+
+  #sorting h2{
+	margin-top: 5em;
+  }
+
+   #sorting img{
+   width: 100%;
+   height: auto;
+   
+  }
+
+  #sorting ul {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: repeat(4, auto);
+  gap: 1.5em;
+  justify-content: center;
  }
+
+  #sorting button{
+   width: fit-content;
+  
+
+  }
+
+
+
+
+
+
+/*********************/
+/* Quizzes */
+/*********************/
+
+
+#quizzes {
+display: grid;
+place-items: center;
+margin-top: 5em;
+
+}
+
+#quizzes a{
+	margin-top: 3em;
+}
+
+#quizzes ul {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  gap: 2em;
+}
+
+#quizzes li {
+  display: grid;
+  grid-template-rows: 13em max-content;
+}
+
+#quizzes li h3 {
+  margin: -3rem;
+  z-index: 1000;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+#quizzes li p {
+  margin: -1.5rem;
+  text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+#quizzes li img {
+  width: 100%;
+  height: auto;
+  align-self: stretch;
+  object-fit: cover;
+  grid-row-start: 1;
+  border-radius: 10px;
+}
+
+
+
+
+/*********************/
+/* shop */
+/*********************/
+
+
+/* carousel code: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels, https://css-tricks.com/almanac/properties/s/scroll-behavior/ */
+
+#ornamentshop h2 {
+	margin-top: 5em;
+
+}
+
+#ornamentshop ul {
+width: 100%;
+height: auto;
+display: flex;
+gap: 4vw;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+}
+
+#ornamentshop li{
+background-color: var(--backgroundcolor-poll);
+flex: 0 0 95%;
+scroll-snap-align: center;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+#ornamentshop li img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* ensures full image is visible */
+  margin-bottom: 1em;
+}
+
+#ornamentshop ul::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: var(--backgroundpoll-hover);
+  opacity: 0.7;
+  /*cursor: pointer;*/
+}
+
+#ornamentshop ul::scroll-button(left) {
+  content: "◄";
+}
+
+#ornamentshop ul::scroll-button(right) {
+  content: "►";
+}
+
+#ornamentshop a{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	margin-top: 2em;
+}
+
+
+
+
+
+/*********************/
+/* magical picks */
+/*********************/
+
+#magicalpicks h2{
+	margin-top: 5em;
+}
+
+#magicalpicks h3{
+	display: none;
+  }
+
+#magicalpicks ul {
+width: 100%;
+height: auto;
+display: flex;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+}
+
+#magicalpicks li{
+flex: 0 0 80%;
+scroll-snap-align: center;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 0 -2em;
+  
+}
+
+#magicalpicks li img {
+  width: 80%;
+  height: auto;
+  object-fit: contain; 
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+/*********************/
+/* Footer */
+/*********************/
+  
+  #navfooter{
+	display: grid;
+	background-color: var(--color-details);
+	
+  }
+
+  #border {
+   border: solid var(--color-text), 1px;
+   margin: 1em;
+  }
+
+  #HarryPotterLogo {
+	justify-self: center;
+	height: 3em; 
+	width: auto;
+	margin: 4em;
+  }
+
+  #navfooter ul {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  grid-template-columns: repeat(1, auto);
+  gap: 1.5em;
+  justify-content: center;
+  
+ }
+
+  #navfooter a{
+	text-decoration: none;
+  }
+
+  #navfooter ul#logos{
+  display: grid;
+  grid-template-columns: repeat(4, auto); /* ← FIX */
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+ 
+
+  }
+
+  
+  #navfooter ul#logos img{
+	width: 25px;
+	height: auto;
+	margin:3em 0 3em 0 ;
+  }
+
+
+
+
 
   /****************/
 /* Desktop */   
@@ -213,6 +539,12 @@ body{
 	  column-gap: 2em;
 	}
 
+	
+   nav#navheader a.icon {
+    display: none;
+
+   }
+
 	nav#navheader a{
 		display: block;
 		padding: 1em;
@@ -224,11 +556,16 @@ body{
 		background-color: var(--color-details);
 		position: fixed;
 		top: 0;
-		height: 10em;
+		height: 4em;
 		width: 100%;
 		transition: top 0.3s ease;
 		z-index: 1000;
 	  }
+
+    nav#navheader a:hover {
+	background-color: var(--color-text);
+	color: var(--color-details);
+  }
 
 	#topheader img {
 		height: 1.5em; 
