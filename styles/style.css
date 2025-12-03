@@ -19,6 +19,8 @@
 	--color-background:#242633;
 	--color-details:#070f28;
 	--color-button:#5758ff;
+	--backgroundcolor-poll:#12152980;
+	--backgroundpoll-hover:#ffffff8d;
 	
 	
 }
@@ -28,12 +30,66 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 8000px;
+	color: var(--color-text);
+	text-align: center;
 }
 
 
 /****************/
 /* JOUW STYLING */   /*https://www.w3schools.com/css/css3_transitions.asp transition code*/
 /****************/
+
+
+   h1{
+	display: none;
+   }
+
+   h2{
+	text-transform: uppercase ;
+   }
+   
+   a{
+	color: var(--color-text);
+	text-transform: uppercase;
+   }
+
+   button{
+	text-transform: uppercase;
+	color: var(--color-text);
+	background-color: var(--color-button);
+	border-radius: 90px;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	
+	
+   }
+
+    /*https://www.w3schools.com/css/css_list.asp code om de puntjes weg te halen*/
+  li {
+	list-style: none; 
+  }
+
+
+   #logo{
+	display: flex;
+	position: absolute;
+	height: 3em; 
+	width: auto;
+	margin-top: 20px;
+	margin-left: 80px;
+   }
+
+   #hamburgermenu{
+	display: flex;
+	position: absolute;
+	height: 1.8em; 
+	width: auto;
+	margin-top: 27px;
+	margin-left: 20px;
+   }
+
    nav#navheader {
 	background-color: var(--color-details);
 	position: fixed;
@@ -77,10 +133,7 @@ body{
 	justify-content: flex-start;
 	margin-right: -5px;
   }
-  /*https://www.w3schools.com/css/css_list.asp code om de puntjes weg te halen*/
-  #topheader li {
-	list-style: none; 
-  }
+ 
   
   #topheader a {
 	display: inline-block;
@@ -89,19 +142,72 @@ body{
   #topheader img {
 	height: 0em; 
 	width: auto;
-	transition: transform 0.3s ease, filter 0.3s ease; 
+  }
+
+  #yulebalimgdesktop{
+    display: none;
+  }
+
+  #yulebalimgphone{
+	display: flex;
+	height: auto; 
+	width: 100%;
+	position: absolute;
+	top: 5em;
+	left: 0;
+	z-index: 0;
+  }
+ 
+
+  #yuleball h2{
+	display: flex;
+	position: relative;
+	margin-top: 12em;
+	z-index: 10;
+	text-shadow: 2px 1px 5px #000000;
+	
+  }
+
+  #yuleball p{
+	z-index: 1100;
+
+  }
+	
+	
+	
+  
+
+  #poll button{
+	background-color:var(--backgroundcolor-poll);
+	border: 1px solid #5758ff;
+	border-radius: 10px;
+	cursor: pointer;
   }
   
+  #poll button:hover{
+	background-color:var(--backgroundpoll-hover);
+
+  }
+
+  #poll {
+	display: grid;
+	text-align: center;
+	gap: 10px;        
+	max-width: 300px;
+	margin: 0 auto;
+  }
+  
+ #quizzes img{
+	height: auto;
+	width: 20em;
+ }
 
   /****************/
 /* Desktop */   
 /****************/
 
   @media (min-width: 48em) {
-	body {
-	  background-color: white;
-	}
-  
+
 	p {
 	  column-count: 2;
 	  column-gap: 2em;
@@ -128,5 +234,18 @@ body{
 		height: 1.5em; 
 		width: auto;
 		transition: transform 0.3s ease, filter 0.3s ease; 
+	  }
+
+	  #yulebalimgphone{
+		display: none;
+		height: auto; 
+		width: 100%;
+		position: absolute;
+		top: 5em;
+		left: 0;
+		z-index: 0;
+	  }
+	  #yulebalimgdesktop{
+		display: block;
 	  }
   }

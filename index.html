@@ -7,6 +7,7 @@
   <title>Harry Potter</title>
   <link href="styles/style.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <script defer src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -15,6 +16,8 @@
   <h1>Harry Potter</h1>
 
   <nav id="navheader">
+    <img src="images/HarryPotter-Logo.png" alt="Logo" id="logo">
+    <img src="images/WhiteHamburgerMenu.png" alt="hamburgermenu" id="hamburgermenu">
     <ul id="topheader">
       <li><a href="#"><img src="images/youtube-app-white-icon.webp" alt="YoutubeLink"></a></li>
       <li><a href="#"><img src="images/TikTok-icon-white.png" alt="TiktokLink"></a></li>
@@ -30,43 +33,51 @@
       <li><a href="#">Patronus Experience</a></li>
       <li><a href="#">Fact Files</a></li>
       <li><a href="#">Shop</a></li>
-      <script defer src="scripts/script.js"></script>
     </ul>
   </nav>
   
-
+  
  
 </header>
 
 <main>
 
-  <section>
-    <h2>Every single thought we had on our Harry Potter and the Goblet of Fire 20th anniversary rewatch</h2>
-    <p>It's been 20 years since Harry Potter and the Goblet of Fire hit our screens! The perfect excuse for a celebratory rewatch! From the Triwizard Tournament to the surge of indie band Hogwarts haircuts – here’s every single thought we had on ours.</p>
-    <a href="#">Read</a>
+  <section id="yuleball">
+    <h2>Your most controversial Yule Ball hot takes</h2>
+    <p>From your stong opinions on fashion to your divisive thoughts on dates, we wanted you, the fans, to give us all your unpopular Yule Ball opinions... and you didn't hold back.</p>
+    <img src="images/YuleBallImageDesktop.webp" alt="YuleBallafbeelding" id="yulebalimgdesktop">
+    <img src="images/YuleBallImageMobile.webp" alt="YuleBallafbeelding" id="yulebalimgphone">
+    
+    <button href="#">Read</button>
   </section>
 
   <section id="poll">
     <h2>Poll</h2>
+    <p>Who would you rather take to the Yule Ball?</p>
+    <button>Cedric Diggory</button>
+    <button>Cho Chang</button>
+    <button>Viktor Krum</button>
+    <button>Hermione Granger</button>
   </section>
 
   <section>
     <h2>What's your Hogwarts house?</h2>
+    <button>get sorted now</button>
   </section>
 
-  <section>
+  <section id="quizzes">
     <h2>Quizzes</h2>
+    <ul>
+      <li><h3>The ultimate Dobby quiz</h3><p>15 Questions</p> <img src="images/Dobby_3_1800x1248.webp" alt="picturedobby"></li>
+      <li><h3>The toe-curlingly embarrassing quiz</h3><p>10 Questions</p><img src="images/hp-f3-boggart-snape-augusta-square.webp" alt="picture snape"></li>
+      <li><h3>Whose wand is it anyway?</h3><p>10 Questions</p><img src="images/the-wand-lighting-charm_1_1800x1248.webp" alt="pictureharrypotter"></li>
+    </ul>
+    <a href="#">all quizes</a>
   </section>
 
-  <section>
-    <h2>Get your wizarding portrait Yule ball ready</h2>
-    <p>Fancy a new hairstyle like Hermione? Or would you rather look like Ron's Great Aunt Tessie? Explore the range of Yule Ball clothing, accessories and backgrounds in Portrait Maker.</p>
-    <a href="#">Wangoballwime?</a>
-  </section>
-
-  <section>
-    <h2>Explore the new cosy Autumn collection</h2>
-    <p>Accio pumpkins! Get spooky season ready with the Lumos Nox range from the Harry Potter Shop.</p>
+  <section id="ornamentshop">
+    <h2>Accio ornaments! Add a touch of Harry Potter magic to Christmas</h2>
+    <p>Get ready to deck the (Great) halls with these Harry Potter-themed decorations, from ornaments to adorn your mantle to bespoke baubles for your tree.</p>
   </section>
 
   <section>
@@ -76,7 +87,7 @@
 </main>
 
 <footer>
-  <nav>
+  <nav id="navfooter">
     <ul>
       <li><a href="#">Voorkeuren beheren</a></li>
       <li><a href="#">Press</a></li>
