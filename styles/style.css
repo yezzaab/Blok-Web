@@ -52,6 +52,10 @@ body{
 	text-transform: uppercase;
    }
 
+   a:hover {
+    cursor: pointer;
+   }
+
    button{
 	text-transform: uppercase;
 	color: var(--color-text);
@@ -61,8 +65,14 @@ body{
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
-	
-	
+  border: solid transparent;
+
+   }
+
+   button:hover {
+   background-color: var(--color-details);
+   border: solid var(--color-button);
+   cursor: pointer;
    }
 
     /*https://www.w3schools.com/css/css_list.asp code om de puntjes weg te halen*/
@@ -151,7 +161,7 @@ body{
    right: 0;
    top: 0;
    padding: 0.7em 0.7em;
-   margin: 0.7em;
+   margin: 1em 0.2em 1em 0;
   }
 
 #websitenav {
@@ -351,6 +361,10 @@ margin-top: 5em;
   border-radius: 10px;
 }
 
+#quizzes li:hover {
+  cursor: pointer;
+}
+
 
 
 
@@ -401,7 +415,7 @@ display: flex;
   background: none;
   color: var(--backgroundpoll-hover);
   opacity: 0.7;
-  /*cursor: pointer;*/
+  cursor: pointer;
 }
 
 #ornamentshop ul::scroll-button(left) {
@@ -539,6 +553,19 @@ display: flex;
 	  column-gap: 2em;
 	}
 
+ /****************/
+/* header */   
+/****************/
+  #logo {
+    display: grid;
+    justify-self: center;
+    position: relative;
+    height: auto;
+    margin: 1.5em 0 0 0;
+    padding: 0;
+    width: 10.5em;
+  }
+
 	
    nav#navheader a.icon {
     display: none;
@@ -556,33 +583,92 @@ display: flex;
 		background-color: var(--color-details);
 		position: fixed;
 		top: 0;
-		height: 4em;
+		height: 11em;
 		width: 100%;
-		transition: top 0.3s ease;
+		transition: top 0.5s ease;
 		z-index: 1000;
 	  }
 
-    nav#navheader a:hover {
-	background-color: var(--color-text);
-	color: var(--color-details);
+  
+
+  nav#navheader #topheader {
+    display: grid;
+    grid-auto-flow: column
+    
   }
 
+  nav#navheader ul#websitenav {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    
+    }
+
+    nav#navheader ul#websitenav li:hover {
+      color: var(--color-text);
+      text-decoration: underline;
+      
+      }
+
+    nav#navheader ul#websitenav img{
+      display: none;
+    
+      }
+
+  
+
+  #topheader {
+    display: flex;
+    width: 100%;
+    justify-content: start; 
+    gap: 1em; 
+   
+   
+  }
+
+  #topheader li:hover{
+    cursor: pointer;
+  }
+  
 	#topheader img {
-		height: 1.5em; 
-		width: auto;
-		transition: transform 0.3s ease, filter 0.3s ease; 
+    display: flex;
+    position: absolute;
+		height: 1.5em;
+    bottom: 7em;
 	  }
+
+  #topheader button {
+      display: none;
+      }
+
+    
+  
+ /****************/
+/* Yuleball */   
+/****************/
 
 	  #yulebalimgphone{
 		display: none;
-		height: auto; 
-		width: 100%;
-		position: absolute;
-		top: 5em;
-		left: 0;
-		z-index: 0;
 	  }
+
 	  #yulebalimgdesktop{
 		display: block;
+    width: 100%;
+    height: auto;
 	  }
+
+    #yuleball {
+      display: grid;
+      place-items: center;
+    }
+
+    #yuleball p {
+      margin: 2rem;
+      text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+    }
+
+
+
+    
+
   }
