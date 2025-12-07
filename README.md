@@ -141,7 +141,16 @@ Responsive
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - Simpele woorden gebruikt
+  - Duidelijke knoppen en links.
+  - Alle sections hebben toepasselijke namen.
+  - Alle afbeeldingen hebben duidelijke alts.
+  - Elke pagina heeft een eigen naam.
+  - Voor mobiel genoeg ruimte tussen de verschillende interactieve items.
+  - Goed gebruik van list elements.
+
+
+ 
 
 </details>
 
@@ -177,19 +186,20 @@ Vorige week helaas weinig tot niks kunnen doen. Deze week lekker gewerkt, eerste
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/HarryPotterHomeDesktopZelfGemaakt.png" width="375px" alt="Screenshot Desktop Home pagina">
+  <img src="readme-images/HarryPotterHomeMobileZelfGemaakt.png" width="375px" alt="Screenshot Mobiele Home pagina 2">
+  <img src="readme-images/HarryPotterProfileDesktopZelfGemaakt.png" width="375px" alt="Screenshot Desktop Profiel pagina 3">
+  <img src="readme-images/HarryPotterProfileMobileZelfGemaakt.png" width="375px" alt="Screenshot Mobiele Profiel pagina 4">
 
-
+  
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd welke methodes het handigst zijn om groottes aan te houden en visueel bij te houden met het veranderen van de grootte van het scherm (responsive). Ik heb gebruik gemaakt van media queries, om dit dus aan te passen vanaf een bepaalde grootte om het ook voor desktop bruikbaar te maken. Ik heb verschillende headers leren maken. Ik heb meer met buttons gewerkt, inplaats van alleen a'tjes. Ik heb verder van Grid gebruik gemaakt, waardoor het neerzetten van je verschillende gedeeltes handiger gaat. Ik heb geleerd hoe ik een carousel maak, eentje met knoppen en eente zonder. Ik heb geprobeerd nettere html te schrijven.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het stijlen van de header is wel nog lastig, wel gelukt uiteindelijk. Maar de verschillende positioneringen zonder de wegvagende header kapot te maken is nog moeilijk. Ook snap ik Grid wel, maar moet ik wel nog heel veel spieken op de website voor elke verandering. Hierdoor kies ik er toch soms nog voor uit gemak om flexbox te gebruiken. Nette code schrijven vind ik ook nog wel moeilijk. Zo moet ik nog werken aan, wanneer je classes en id's gebruikt. Ik heb nu bijvoorbeeld heel veel ID's en zou deze de volgende keer waarschijnlijk eerder als Class gebruiken. Verder kon ik ook nog wat meer details aan de opmaak toevoegen, maar ben ik heel veel bezig geweest met het responsive maken, wat ook logisch is want dat was mijn focus.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 

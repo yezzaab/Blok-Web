@@ -188,13 +188,13 @@ body{
 	width: auto;
   }
 
-  #topheader button, #profileicon {
+  #topheader button{
    display: flex;
    position: relative;
    right: 0;
    top: 0;
    padding: 0.7em 0.7em;
-   margin: 1em 0.2em 17em 0;
+   margin: 1em 0.2em 18em 0;
   }
 
 #websitenav {
@@ -334,6 +334,10 @@ body{
   padding: 2em;
 }
 
+#eigenschappen a:hover{
+  color: var(--color-buttonprofile);
+}
+
 #eigenschappen li {
   background-color: var(--backgroundcolor-poll);
   padding: .2em;
@@ -456,6 +460,7 @@ display: grid;
 place-items: center;
 text-align: center;
 
+
 }
 
 
@@ -464,7 +469,7 @@ text-align: center;
   }
 
    #sorting img{
-   width: 100%;
+   width: 80%;
    height: auto;
    
   }
@@ -474,7 +479,7 @@ text-align: center;
   padding: 0;
   margin: 0;
   grid-template-columns: repeat(4, auto);
-  gap: 1.5em;
+  gap: 1em;
   justify-content: center;
  }
 
@@ -545,7 +550,10 @@ margin-top: 5em;
 }
 
 #quizzes li h3 {
-  margin: -3rem;
+  margin: -4.6rem;
+  width: 8em;
+  padding: 0;
+  justify-self: center;
   z-index: 1000;
   text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
@@ -949,6 +957,10 @@ margin-top: 3em;
     object-fit: contain;
   }
 
+  #merchandise a{
+    padding-bottom: 2em;
+  }
+
 /**************/
 /*magicalpicks en fellowwitches*/  
 /*************/
@@ -997,3 +1009,10 @@ margin-top: 3em;
   }
 
 }
+
+
+
+
+    
+
+  
