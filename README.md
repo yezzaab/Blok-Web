@@ -94,26 +94,18 @@ Responsive
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Een website uitgekozen (Harry Potter) en voor webpagina 1, grotendeels van de html geschreven.
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Articles eruit halen en veranderen in sections.
+  - Verder goede duidelijke html geschreven.
+  - Voeg de afbeeldingen nog toe.
+  - Duidelijke breakdownschets gemaakt.
+  - Goed uitgebreide toegankelijkheidstest uitgevoerd en genoteerd.
+ 
 
 </details>
 
@@ -127,26 +119,15 @@ Responsive
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Week lang ziek geweest, heb wel al de html geschreven en nu een inhaalslag maken.
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Niet veel veranderd.
+  - Kleuren gevonen van de originele website.
+  - Image downloader gevonden.
+  - Volgende week weer knallen.
 
 </details>
 
@@ -174,26 +155,15 @@ Responsive
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Vorige week helaas weinig tot niks kunnen doen. Deze week lekker gewerkt, eerste pagina is af voor mobile, veel gecodeerd met responsiveness in het achterhoofd. Of misschien toch switchen naar Surface plane?
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Verder met Responsive maken voor desktop.
+  - Goed bezig, werkt goed alleen is er een afbeelding te groot? (Bleek ingezoomd)(Gefixt)
+
 
 </details>
 
@@ -231,12 +201,11 @@ Responsive
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
   1. https://www.clipartmax.com/max/m2H7G6H7Z5H7K9Z5/ , PNG Harry Potter logo
   2. https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
-  3. ...
-
+  3. https://www.w3schools.com/css/css3_transitions.asp transition code 
+  4. https://css-tricks.com/snippets/css/complete-guide-grid/ Grid Guide
+  5. https://www.w3schools.com/css/css_list.asp code om de puntjes weg te halen
+  6. carousel code: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels, https://css-tricks.com/almanac/properties/s/scroll-behavior/
+  7. webppagina button redirect https://www.w3schools.com/howto/howto_js_redirect_webpage.asp en https://www.w3schools.com/jsref/event_onclick.asp
 </details>

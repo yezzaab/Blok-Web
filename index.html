@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="author" content="jouw naam">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harry Potter</title>
+  <title>Harry Potter | Home Page</title>
   <link href="styles/style.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="images/harry-potter-seeklogo.svg">
   <script defer src="scripts/script.js"></script>
 </head>
 
-<body>
+<body class="homepage">
 
 <header>
   <h1>Harry Potter</h1>
@@ -20,13 +20,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <ul id="topheader">
+      <ul class="topheader-images">
       <li><a href="#"><img src="images/youtube-app-white-icon.webp" alt="YoutubeLink"></a></li>
       <li><a href="#"><img src="images/TikTok-icon-white.png" alt="TiktokLink"></a></li>
       <li><a href="#"><img src="images/facebook-app-round-white-icon.webp" alt="FacebookLink"></a></li>
       <li><a href="#"><img src="images/instagram-white-icon.webp" alt="InstagramLink"></a></li>
+      </ul>
 
-      <li><button>log in</button></li>
-      <li><button id="signup">sign up</button></li>
+      <li>
+        <button>log in</button>
+      </li>
+      <li>
+        <button onclick="window.location.href='profiel.html';">sign up</button>
+      </li>
     </ul>
 
     <ul id="NavButtons"></ul>
@@ -65,6 +71,8 @@
     <button href="#">Read</button>
   </section>
 
+  
+<section id="interactive-sections">
   <section id="poll">
     <h2>- Poll -</h2>
     <p>Who would you rather take to the Yule Ball?</p>
@@ -78,13 +86,15 @@
     <h2>What's your Hogwarts house?</h2>
     <img src="images/sortedheader.svg" alt="Sorted today" id="sortedHeader">
     <ul>
-      <li><h4>Gryffindor</h4></li>
-      <li><h4>Ravenclaw</h4></li>
-      <li><h4>Hufflepuff</h4></li>
-      <li><h4>Slytherin</h4></li>
+      <li><h3>Gryffindor</h3></li>
+      <li><h3>Ravenclaw</h3></li>
+      <li><h3>Hufflepuff</h3></li>
+      <li><h3>Slytherin</h3></li>
     </ul>
     <button>get sorted now</button>
   </section>
+</section>
+
 
   <section id="quizzes">
     <h2>Quizzes</h2>

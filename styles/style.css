@@ -16,17 +16,19 @@
 :root {
 	
 	--color-text:#ffffff;
-	--color-background:#242633;
+	--color-backgroundhome:#242633;
+  --color-backgroundprofile: #351414;
 	--color-details:#070f28;
-	--color-button:#5758ff;
+	--color-buttonhome:#5758ff;
+  --color-buttonprofile:#de554b;
 	--backgroundcolor-poll:#12152980;
 	--backgroundpoll-hover:#ffffff8d;
+
 	
 	
 }
 
 body{
-	background-color: var(--color-background);
 	margin: 0;
 	padding: 0;
 	color: var(--color-text);
@@ -35,9 +37,43 @@ body{
 
 
 /****************/
-/* JOUW STYLING */   /*https://www.w3schools.com/css/css3_transitions.asp transition code https://css-tricks.com/snippets/css/complete-guide-grid/ Grid Guide
+/* JOUW STYLING */   /*https://www.w3schools.com/css/css3_transitions.asp transition code https://css-tricks.com/snippets/css/complete-guide-grid/ Grid Guide https://www.w3schools.com/Html/html_classes.asp?utm.com classes info
 /****************/
+.homepage {
+  background-color: var(--color-backgroundhome); 
+}
 
+.homepage button{
+	color: var(--color-text);
+	background-color: var(--color-buttonhome);
+  border: solid transparent;
+	
+   }
+
+.homepage button:hover {
+   background-color: var(--color-details);
+   border: solid var(--color-buttonhome);
+
+   }
+
+
+.profilepage {
+  background-color: var(--color-backgroundprofile);
+}
+
+
+.profilepage button {
+  color: var(--color-text);
+  background-color: transparent;
+  border: 1px solid var(--color-text);
+  cursor: pointer;
+}
+
+.profilepage button:hover {
+  background-color: var(--color-text);
+  color: var(--color-backgroundprofile); 
+  border: 1px solid var(--color-text);
+}
 
    h1{
 	display: none;
@@ -54,14 +90,12 @@ body{
 
    a:hover {
     cursor: pointer;
+    transition: ease 0.3s;
    }
 
    button{
 	text-transform: uppercase;
-	color: var(--color-text);
-	background-color: var(--color-button);
 	border-radius: 90px;
-	border: none;
 	padding: 15px 32px;
 	text-align: center;
 	text-decoration: none;
@@ -70,9 +104,8 @@ body{
    }
 
    button:hover {
-   background-color: var(--color-details);
-   border: solid var(--color-button);
    cursor: pointer;
+   transition: ease 0.3s;
    }
 
     /*https://www.w3schools.com/css/css_list.asp code om de puntjes weg te halen*/
@@ -155,13 +188,13 @@ body{
 	width: auto;
   }
 
-  #topheader button {
+  #topheader button, #profileicon {
    display: flex;
    position: relative;
    right: 0;
    top: 0;
    padding: 0.7em 0.7em;
-   margin: 1em 0.2em 1em 0;
+   margin: 1em 0.2em 17em 0;
   }
 
 #websitenav {
@@ -185,6 +218,8 @@ body{
 #websitenav img{
 	display: flex;
 }
+
+
   
 
 
@@ -229,6 +264,148 @@ body{
   }	
   
 
+/*********************/
+/* profielstart */
+/*********************/
+
+
+#profielstart {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  justify-items: center; 
+}
+
+  #profielstart .eigenprofiel {
+    display: grid;
+    gap: 1em;
+    justify-items: center; 
+    text-align: center;
+  }
+
+#profielstart img {
+  width: 50%;
+  height: auto;
+  order: 1;
+  margin-top: 8em;
+}
+
+#profielstart h2 {
+  order: 2;
+}
+
+#profielstart h3 {
+  order: 3;
+}
+
+#profielstart p {
+  order: 4;
+  opacity: 0.4;
+  margin-top: -1em;
+}
+
+#profielstart button {
+  order: 2;
+}
+
+
+#eigenschappen {
+  order: 5;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin: 2em auto;        
+  padding: .2em; 
+}
+
+#eigenschappen img {
+  width: 3em;
+  height: auto;
+}
+
+#eigenschappen button{
+  width: fit-content;
+  background-color: var(--color-buttonprofile);
+  border: none;
+}
+
+#eigenschappen a{
+  padding: 2em;
+}
+
+#eigenschappen li {
+  background-color: var(--backgroundcolor-poll);
+  padding: .2em;
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 1px var(--color-text);
+}
+
+#eigenschappen li:hover{
+  border: solid 1px var(--color-buttonprofile);
+  transition: ease 0.3s;
+}
+
+#eigenschappen li:nth-child(-n+3) {
+  grid-template-rows: auto 1fr auto auto auto;
+}
+
+#eigenschappen li:nth-child(-n+3) h4 {
+  order: 1;
+}
+
+#eigenschappen li:nth-child(-n+3) img {
+  order: 2;
+  width: 50%;
+  height: auto;
+  margin-top: 0;
+}
+
+#eigenschappen li:nth-child(-n+3) h5 {
+  order: 3;
+}
+
+#eigenschappen li:nth-child(-n+3) p {
+  order: 4;
+}
+
+#eigenschappen li:nth-child(-n+3) a {
+  order: 5;
+}
+
+#eigenschappen li:last-child {
+  grid-column: 1 / -1; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+  padding: 1.5em;
+}
+
+#eigenschappen li:last-child img {
+  width: 8em; 
+  height: auto;
+  margin-top: 2em;
+  order: 1;
+}
+
+#eigenschappen li:last-child h4, #eigenschappen li:last-child button {
+  display: block;
+  text-align: left;
+}
+
+#eigenschappen li:last-child section.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  order: 2;
+}
+
 
 
 
@@ -257,7 +434,7 @@ body{
 
   #poll button{
 	background-color:var(--backgroundcolor-poll);
-	border: 1px solid var(--color-button);
+	border: 1px solid var(--color-buttonhome);
 	border-radius: 10px;
 	
   }
@@ -308,7 +485,33 @@ text-align: center;
   }
 
 
+/*************/
+/* portrait*/
+/*************/
 
+#portrait{
+  display: grid;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 2em 0;
+  padding: 0;
+}
+
+#portrait p{
+ margin-top: -2em;
+}
+
+#portrait img{
+  width:70%;
+  height: auto;
+  justify-self: center;
+  order: 1;
+}
+
+#portrait button{
+  width: fit-content;
+  justify-self: center;
+}
 
 
 
@@ -369,18 +572,18 @@ margin-top: 5em;
 
 
 /*********************/
-/* shop */
+/* shops */
 /*********************/
 
 
-/* carousel code: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels, https://css-tricks.com/almanac/properties/s/scroll-behavior/ */
+/* carousel code: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Overflow/Carousels, https://css-tricks.com/almanac/properties/s/scroll-behavior/ /code flex https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex */
 
-#ornamentshop h2 {
+#ornamentshop, #merchandise h2 {
 	margin-top: 5em;
 
 }
 
-#ornamentshop ul {
+#ornamentshop ul, #merchandise ul {
 width: 100%;
 height: auto;
 display: flex;
@@ -390,7 +593,7 @@ scroll-snap-type: x mandatory;
 scroll-behavior: smooth;
 }
 
-#ornamentshop li{
+#ornamentshop li, #merchandise li{
 background-color: var(--backgroundcolor-poll);
 flex: 0 0 95%;
 scroll-snap-align: center;
@@ -402,10 +605,10 @@ display: flex;
   padding: 1em;
 }
 
-#ornamentshop li img {
+#ornamentshop li img, #merchandise li img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* ensures full image is visible */
+  object-fit: contain; 
   margin-bottom: 1em;
 }
 
@@ -426,7 +629,15 @@ display: flex;
   content: "►";
 }
 
-#ornamentshop a{
+#merchandise ul::scroll-button(left) {
+  content: "◄";
+}
+
+#merchandise ul::scroll-button(right) {
+  content: "►";
+}
+
+#ornamentshop a, #merchandise a{
 	display: flex;
 	position: relative;
 	justify-content: center;
@@ -438,18 +649,16 @@ display: flex;
 
 
 /*********************/
-/* magical picks */
+/* magical picks en Fellowwitches */
 /*********************/
 
-#magicalpicks h2{
+#magicalpicks h2, #fellowwitches h2{
 	margin-top: 5em;
 }
 
-#magicalpicks h3{
-	display: none;
-  }
 
-#magicalpicks ul {
+
+#magicalpicks ul, #fellowwitches ul{
 width: 100%;
 height: auto;
 display: flex;
@@ -458,7 +667,7 @@ scroll-snap-type: x mandatory;
 scroll-behavior: smooth;
 }
 
-#magicalpicks li{
+#magicalpicks li, #fellowwitches li{
 flex: 0 0 80%;
 scroll-snap-align: center;
 display: flex;
@@ -471,7 +680,7 @@ display: flex;
   
 }
 
-#magicalpicks li img {
+#magicalpicks li img, #fellowwitches li img{
   width: 80%;
   height: auto;
   object-fit: contain; 
@@ -523,7 +732,7 @@ display: flex;
 
   #navfooter ul#logos{
   display: grid;
-  grid-template-columns: repeat(4, auto); /* ← FIX */
+  grid-template-columns: repeat(4, auto); 
   gap: 2em;
   justify-content: center;
   align-items: center;
@@ -546,12 +755,8 @@ display: flex;
 /* Desktop */   
 /****************/
 
-  @media (min-width: 48em) {
+  @media (min-width: 54em) {
 
-	p {
-	  column-count: 2;
-	  column-gap: 2em;
-	}
 
  /****************/
 /* header */   
@@ -591,11 +796,6 @@ display: flex;
 
   
 
-  nav#navheader #topheader {
-    display: grid;
-    grid-auto-flow: column
-    
-  }
 
   nav#navheader ul#websitenav {
     display: flex;
@@ -616,36 +816,36 @@ display: flex;
       }
 
   
-
-  #topheader {
-    display: flex;
-    width: 100%;
-    justify-content: start; 
-    gap: 1em; 
-   
-   
-  }
-
-  #topheader li:hover{
-    cursor: pointer;
-  }
-  
-	#topheader img {
-    display: flex;
+  #topheader .topheader-images {
     position: absolute;
-		height: 1.5em;
-    bottom: 7em;
-	  }
+    bottom: 6em;
+    left: 1em;
+    display: flex;
+  }
 
-  #topheader button {
-      display: none;
-      }
+  #topheader .topheader-images img {
+    height: 1.5em;
+    width: auto;
+  }
+
+  #topheader button{
+    position: relative;
+    margin: -5em 1em 0 0;
+  }
+
+
+
 
     
   
  /****************/
 /* Yuleball */   
 /****************/
+    #yuleball {
+    display: grid;
+    position: relative;
+    padding-top: 10rem;
+    }
 
 	  #yulebalimgphone{
 		display: none;
@@ -655,20 +855,152 @@ display: flex;
 		display: block;
     width: 100%;
     height: auto;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    z-index: 0;
 	  }
 
-    #yuleball {
-      display: grid;
-      place-items: center;
-    }
+    
+#yuleball h2{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  z-index: 10;
+  padding: 3em;
+}
 
-    #yuleball p {
-      margin: 2rem;
-      text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
-    }
+#yuleball p{
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  z-index: 10;
+  padding: 8em 0 0;
+  max-width: 30rem;
+  justify-self: center;
+  font-size: 18px;
+}
+
+#yuleball button{
+margin-top: 3em;
+}
+
+
+/*****************/
+/*poll en Sorting*/   
+/*****************/
+
+  #interactive-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 3em; 
+    margin: 0 auto;
+    align-items: start; 
+  }
+
+  #poll h2{
+    margin-top: 8em;
+  }
+
+  #poll, #sorting {
+    max-width: 100%; 
+
+  }
+
+
+  #poll button{
+    width: 30em;
+    justify-self: center;
+  }
+
+/**********/
+/*quizzes*/   
+/********/
+
+   #quizzes ul {
+    display: grid;
+    gap: 2em;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+
+    #quizzes li img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px;
+  }
+
+
+/**************/
+/*shops*/    
+/*************/
+
+   #ornamentshop ul, #merchandise ul {
+    gap: 2vw; 
+    overflow-x: hidden; 
+  }
+
+  #ornamentshop li, #merchandise li{
+    flex: 0 0 30%; 
+    max-width: 30%; 
+  }
+
+  #ornamentshop li img, #merchandise li img{
+    max-height: 15em;
+    object-fit: contain;
+  }
+
+/**************/
+/*magicalpicks en fellowwitches*/  
+/*************/
+
+   #magicalpicks ul, #fellowwitches ul{
+    gap: 1em; 
+    overflow-x: hidden;
+    justify-content: center; 
+  }
+
+  #magicalpicks li, #fellowwitches li{
+    flex: 0 0 30%; 
+    max-width: 18em;  
+  }
+
+  #magicalpicks li img, #fellowwitches li img{
+    max-height: 20em;
+    object-fit: contain;
+  }
+
+/****************/
+/* profielstart */   
+/****************/
+
+   #profielstart {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 3em;
+    padding: 4em 5em;
+  }
+  #profielstart .eigenprofiel {
+    display: grid;
+    gap: 1em;
+    justify-items: center; 
+    text-align: center;
+  }
+
+  #profielstart .eigenprofiel img {
+    width: 40%;
+  }
+
+  #eigenschappen {
+    margin-top: 8em;
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+}
+
 
 
 
     
 
-  }
+  
