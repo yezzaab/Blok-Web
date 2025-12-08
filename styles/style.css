@@ -18,11 +18,15 @@
 	--color-text:#ffffff;
 	--color-backgroundhome:#242633;
   --color-backgroundprofile: #351414;
+  --color-backgroundprofilelightmode: #d69c9c;
+  --color-backgroundhomelightmode:#5757ff7b;
 	--color-details:#070f28;
 	--color-buttonhome:#5758ff;
+  --color-detailslightmode: #7171e0;
   --color-buttonprofile:#de554b;
 	--backgroundcolor-poll:#12152980;
 	--backgroundpoll-hover:#ffffff8d;
+  --color-profiellightmode: rgba(93, 22, 22, 0.398);
 
 	
 	
@@ -73,6 +77,10 @@ body{
   background-color: var(--color-text);
   color: var(--color-backgroundprofile); 
   border: 1px solid var(--color-text);
+}
+
+.profilepage .topheader-images {
+  display: none;
 }
 
    h1{
@@ -133,12 +141,30 @@ body{
 	margin-left: 80px;
    }
 
-   nav#navheader a.icon {
+   #topheader > li:nth-last-child(2), #topheader > li:last-child {
+    border: solid transparent;
+    background-color: var(--color-buttonhome);
+    border-radius: 100px;
+    margin-bottom: 13em;
+    display: flex;
+    position: relative;
+    font-size: 0.7rem;
+}
+
+   nav#navheader button.icon {
     display: flex;
     position: absolute;
+    border: none;
+    background-color: transparent;
     left: 0;
-    top: 0;
-	font-size: 1.8em;
+    top: .5em;
+	  font-size: 1.8em;
+   }
+
+   nav#navheader button.icon:hover {
+   color: var(--color-text);
+   border: none;
+   background-color: transparent;
    }
 
    nav#navheader {
@@ -166,8 +192,6 @@ body{
 	text-decoration: none;
 	
   }
-
-  
   
 
  #topheader {
@@ -188,14 +212,6 @@ body{
 	width: auto;
   }
 
-  #topheader button{
-   display: flex;
-   position: relative;
-   right: 0;
-   top: 0;
-   padding: 0.7em 0.7em;
-   margin: 1em 0.2em 18em 0;
-  }
 
 #websitenav {
   background-color: var(--color-details); 
@@ -620,30 +636,7 @@ display: flex;
   margin-bottom: 1em;
 }
 
-#ornamentshop ul::scroll-button(*) {
-  border: 0;
-  font-size: 2rem;
-  background: none;
-  color: var(--backgroundpoll-hover);
-  opacity: 0.7;
-  cursor: pointer;
-}
 
-#ornamentshop ul::scroll-button(left) {
-  content: "◄";
-}
-
-#ornamentshop ul::scroll-button(right) {
-  content: "►";
-}
-
-#merchandise ul::scroll-button(left) {
-  content: "◄";
-}
-
-#merchandise ul::scroll-button(right) {
-  content: "►";
-}
 
 #ornamentshop a, #merchandise a{
 	display: flex;
@@ -651,9 +644,6 @@ display: flex;
 	justify-content: center;
 	margin-top: 2em;
 }
-
-
-
 
 
 /*********************/
@@ -713,7 +703,7 @@ display: flex;
   }
 
   #border {
-   border: solid var(--color-text), 1px;
+   border: solid var(--color-text) 1px;
    margin: 1em;
   }
 
@@ -780,7 +770,7 @@ display: flex;
   }
 
 	
-   nav#navheader a.icon {
+   nav#navheader button.icon {
     display: none;
 
    }
@@ -836,10 +826,15 @@ display: flex;
     width: auto;
   }
 
-  #topheader button{
+  #topheader > li:nth-last-child(2), #topheader > li:last-child {
+    border: solid transparent;
+    background-color: var(--color-buttonhome);
+    border-radius: 100px;
+    margin-top: -5em;
+    display: flex;
     position: relative;
-    margin: -5em 1em 0 0;
-  }
+    font-size: 1rem;
+}
 
 
 
@@ -957,9 +952,7 @@ margin-top: 3em;
     object-fit: contain;
   }
 
-  #merchandise a{
-    padding-bottom: 2em;
-  }
+
 
 /**************/
 /*magicalpicks en fellowwitches*/  
@@ -1010,9 +1003,40 @@ margin-top: 3em;
 
 }
 
+/****************/
+/* light mode */   
+/****************/
+@media (prefers-color-scheme: light){
+  .homepage{
+    background-color: var(--color-backgroundhomelightmode );
+  }
 
+  .homepage button{
+    background-color: var(--color-details);
+  }
 
+  .homepage button:hover{
+    background-color: var(--color-buttonhome);
+  }
 
-    
+  .homepage a:hover{
+    color: var(--color-details);
+  }
+
+  .profilepage{
+    background-color: var(--color-backgroundprofilelightmode);  
+  }
+
+  nav#navheader {
+    background-color: var(--color-details);
+
+}
+
+  #eigenschappen li {
+    background-color: var(--color-profiellightmode);
+
+}
+
+}
 
   
